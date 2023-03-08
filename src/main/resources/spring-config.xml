@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean name="student1" class="org.example.Student"/>
+
+    <bean name="professor1" class="org.example.Professor">
+        <property name="name" value="Valish"/>
+        <property name="age" value="16"/>
+    </bean>
+
+    <bean name="professor2" class="org.example.Professor">
+        <constructor-arg name="name" value="Valish"/>
+        <constructor-arg name="age" value="16"/>
+    </bean>
+
+    <bean name="lesson1" class="org.example.Lesson">
+        <property name="name" value="Java"/>
+        <property name="professor" ref="professor1"/>
+    </bean>
+
+</beans>
