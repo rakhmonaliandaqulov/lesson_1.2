@@ -13,7 +13,7 @@ public class Main {
         Professor professor = (Professor) context.getBean("professor1");
         System.out.println(professor);
 
-        Lesson lesson = (Lesson) context.getBean("lesson1");
-        System.out.println(lesson);
+       /* Lesson lesson = (Lesson) context.getBean("lesson1");
+        System.out.println(lesson);*/
     }
 }
